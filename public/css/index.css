@@ -1,0 +1,531 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 150vh;
+}
+.projectContainer{
+    background-color: rgb(6, 2, 41);
+    width: 100%;
+    height: 67%;
+}
+/* header */
+.header{
+    background-color: #100a07;
+    width: 100%;
+    height: 7%;
+    padding: 10px;
+    z-index: 5000;
+}
+.headerContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+.logo img{
+    width: 25px;
+    height: 25px;
+    background-color: #5fc9f3;    
+    border-radius: 5px;
+}
+.inputSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 6px;
+    background-color: #b74d19;
+    border-radius: 8px;
+    border: solid 0.5px #5fc9f3;
+}
+.inputSearch input{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+.inputSearch input:focus{
+    outline: none;
+}
+.inputSearch h4{
+    color: #081f37;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerContainer ul{
+    display: flex;
+    align-items: center;
+}
+.headerContainer ul li{
+    display: flex;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b74d19;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.headerContainer button{
+    padding: 5px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #b74d19;
+    background-color:  #081f37;
+    border-radius: 10px;
+    border: solid 1px #b74d19;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #5fc9f3;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Optional hover effect */
+.hamburger-icon:hover .bar {
+    background-color: #3e758a;
+    box-shadow: 0px 0px 1px 1px #5fc9f3 ;
+}
+
+/* heared media */
+@media (max-width: 900px){
+    .headerContainer ul{
+        display: none;
+        align-items: center;
+    }
+}
+@media (max-width: 900px){
+    .inputSearch{
+
+        padding: 0px 5px;
+        border-radius: 8px;
+    }
+    .inputSearch input{
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+    }
+    .inputSearch h4{
+        display: none;
+    }
+    .headerContainer button{
+        display: none;
+    }
+    .hamburger-icon{
+        display: flex;
+    }
+}
+@media (max-width: 400px){
+    .inputSearch{
+        display: none;
+    }
+}
+/* big container that containe the Stadum */ 
+
+.squadContainer{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to top , #180a03 , #642607) ;
+
+}
+.squadStadium{
+    width: 65%;
+    height: 85%;
+    position: relative;
+}
+.playersExiste{
+    height: 100%;
+    width: 35%;
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.742) 5%, rgba(0, 0, 0, 0.189) 95%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.742) 5%, rgba(0, 0, 0, 0.189) 95%);
+    background-blend-mode: multiply;
+}
+.squadStadium svg{
+    width: 100%;
+    height: 100%;
+}
+.card-empty{
+    z-index: 10;
+    position: absolute;
+    width: 16%;
+    height: 35%;
+}
+.card-empty img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 0px 3px  white);
+}
+.card-empty span {
+    z-index: 999;
+    position: absolute;
+    font-size: small;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 10px;
+    border-radius: 50%;
+    background-color:  rgb(5, 0, 20);
+    box-shadow: 0px 0px 3px 0px white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+.STL{
+    /* left: 150px; */
+    left: 20%;
+    top: -8%;
+}
+.STR{
+    right: 20%;
+    top: -8%;
+}
+.LM{
+    left: 10%;
+    top: 24%;
+}
+.CML{
+    left: 30%;
+    top: 32%;
+}
+.CMR{
+    right: 30%;
+    top: 32%;
+}
+.RM{
+    right: 10%;
+    top: 24%;
+}
+.LB{
+    left: 6%;
+    bottom: 1%;
+}
+.CBL{
+    left: 25%;
+    bottom: -3%;
+}
+.GK{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+}
+.CBR{
+    right: 25%;
+    bottom: -3%;
+}
+.RB{
+    right: 6%;
+    bottom: 1%;
+}
+
+.PlayerContainerCard{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form media  */
+@media (max-width: 900px){
+    .bigContainer{
+        height: fit-content;
+    }
+    .squadContainer{
+        width: 90%;
+        height: fit-content;
+    }
+    .squadContainer svg{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+
+
+/* Players container */
+.playersContainer{
+    position: absolute;
+    right: 0;
+    height: 90%;
+    width: 2%;
+    background-color: rgb(5, 0, 20);
+    transition: .5s ease;
+    z-index: 900;
+}
+.playersContainer .displayicon{
+    z-index: 10000;
+    background-color: rgb(5, 0, 20);
+    position: absolute;
+    border-radius: 50px 0 0 50px;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    transform: translateX(-100%);
+    padding: 10px 0px 10px 10px;
+}
+.playersContainer .displayicon i{
+    font-size: 30px;
+}
+#cardsChangementsContainer{
+    overflow: hidden;
+    display: none;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 40px 20px 20px 20px  ;
+    flex-shrink: 0;
+}
+#pofilePhoto {
+    width: 100%;
+    height: 100%;
+    transition: ease .2s;
+}
+.cardChangements:hover #pofilePhoto{
+    filter: drop-shadow(0px 0px 10px  rgb(7, 15, 239));
+}
+.cardChangements{
+    z-index: 900;
+    transform: translateY(-25px);
+    z-index: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    flex-shrink: 0;
+    margin: 0;
+}
+.photoContainer{
+    z-index: 50;
+    position: absolute;
+    height: 90%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.photoContainer .picDiv{
+    width: 90%;
+    height: 50%;
+}
+.infoContainer{
+    z-index: 200;
+    position: relative;
+    bottom: 8px;
+    background: linear-gradient(to top , rgba(0, 0, 0, 0.742) , rgba(0, 0, 0, 0.189));
+}
+.numInfos{
+    z-index: 99999;
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+.photoContainer {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picDiv img{
+    height: 90%;
+    margin-left: 5px;
+    width: 90%;
+}
+.numInfos div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+.infoContainer h4{
+    z-index: 1000;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+.numInfos label, p{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 7px;
+}
+.ratingContainer{
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.ratingContainer label, p{
+    z-index: 800;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+.ratingContainer p{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.flagPic{
+    z-index: 300;
+    width: 12% !important;
+    height: 6% !important;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    z-index: 99;
+}
+.LogoTeam{
+    z-index: 900;
+    width: 14% !important;
+    height: 10% !important;
+    position: absolute;
+    top: 58%;
+    right: 13%;
+    z-index: 99;
+}
+
+
+.cardChangements:hover .editContainer{
+    right: -8px;  
+    top: -8px;  
+    opacity: 1;
+}
+
+/* playersContainer media */
+@media (max-width: 900px){
+    .playersContainer{
+        position: absolute;
+        right: 0;
+        height: 90%;
+        width: 2%;
+        background-color: rgb(5, 0, 20);
+        transition: .5s ease;
+    }
+}
+
+.changement{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 30px 0px 30px ;
+    background-color:  #150802;
+    width: 100%;
+    height: fit-content;
+}
+.card-empty-changement{
+    width: 12%;
+    height: 180px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+}
+
+.card-empty-changement img{
+    filter: drop-shadow(0px 0px 3px  white);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* card media  */
+@media (max-width: 800px){
+    .cardChangements{
+        width: 100px;
+        height: 150px;
+    }
+    .numInfos{
+        z-index: 99999;
+        display: flex;
+        gap: 1px;
+        justify-content: center;
+    }
+    .numInfos label, p{
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 5px;
+    }
+    .ratingContainer label, p{
+        font-weight: 700;
+        font-size: 7px;
+    }
+    .ratingContainer p{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .infoContainer h4{
+        font-size: 13px;
+    }
+    .card-empty-changement{
+        width: 20%;
+        height: 180px;
+        position: relative;
+    }
+}
+@media (max-width: 500px){
+    .changement{
+        padding: 30px;
+    }
+    .card-empty-changement{
+        width: 30%;
+        height: 130px;
+        position: relative;
+    }
+}
+@media (max-width: 300px){
+
+    .card-empty-changement{
+        width: 30%;
+        height: 120px;
+        position: relative;
+    }
+}
+
