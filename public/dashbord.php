@@ -184,7 +184,7 @@
                             <form action="" id="formData">
                                 <div class="textInputs">
                                     <div>
-                                        <label for="">Name</label>
+                                        <label for="" class="laber">Name</label>
                                         <input type="text" id="name" name="name">
                                     </div>
                                     <div>
@@ -196,18 +196,19 @@
                                         <input type="text" id="club" name="club">
                                     </div>
                                     <div class="positionSelect">
-                                    <label for="">Position</label>
-                                    <select name="" id="positionSelect">
-                                        <option value="ST">ST</option>
-                                        <option value="LM">LW</option>
-                                        <option value="RW">RW</option>
-                                        <option value="CM">CM</option>
-                                        <option value="LB">LB</option>
-                                        <option value="CB">CB</option>
-                                        <option value="RB">RB</option>
-                                        <option value="GK">GK</option>
-                                    </select>
-                                </div>
+                                        <label for="">Position</label>
+                                        <select name="" id="positionSelect">
+                                            <option value="" selected></option>
+                                            <option value="ST">ST</option>
+                                            <option value="LM">LW</option>
+                                            <option value="RW">RW</option>
+                                            <option value="CM">CM</option>
+                                            <option value="LB">LB</option>
+                                            <option value="CB">CB</option>
+                                            <option value="RB">RB</option>
+                                            <option value="GK">GK</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="filesInput">
                                     <div>
@@ -263,7 +264,7 @@
                                     </div>
                                     <button type="submit" class="createBtn">Submit</button>
                                 </div>
-                                <div class="numInputs GKinputs" id="numInputsGK">
+                                <!-- <div class="numInputs GKinputs" id="numInputsGK">
                                     <div>
                                         <label for="">RAT</label>
                                         <input class="numPlayer" type="number" name="rating" id="rating1">
@@ -293,7 +294,7 @@
                                         <input class="numPlayer" type="number" name="positioning">
                                     </div>
                                     <button type="submit" class="createBtn">Submit</button>
-                                </div>
+                                </div> -->
                             </form>
                         </section>
 
