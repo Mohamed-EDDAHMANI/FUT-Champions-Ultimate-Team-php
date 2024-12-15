@@ -35,14 +35,10 @@
                 </li>
                 <li class="sidebar-list-item active">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-shopping-bag">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-                            <line x1="3" y1="6" x2="21" y2="6" />
-                            <path d="M16 10a4 4 0 0 1-8 0" />
-                        </svg>
-                        <span>Products</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor"  
+                            class="feather feather-shopping-bag" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path  d="M5 2C4.84476 2 4.69164 2.03615 4.55279 2.10557L1.10557 3.82918C0.428004 4.16796 0 4.86049 0 5.61803V9.38197C0 10.8687 1.56462 11.8357 2.89443 11.1708L4 10.618V19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V10.618L21.1056 11.1708C22.4354 11.8357 24 10.8687 24 9.38197V5.61803C24 4.86049 23.572 4.16796 22.8944 3.82918L19.4472 2.10557C19.3084 2.03615 19.1552 2 19 2H16C14.8954 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2H5ZM4 4.61803V8.38197L2 9.38197L2 5.61803L4 4.61803ZM8 4H6V9V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V9V4H16C16 6.20914 14.2091 8 12 8C9.79086 8 8 6.20914 8 4ZM22 5.61803L20 4.61803V8.38197L22 9.38197V5.61803ZM10 12.5C10 12.2239 10.2239 12 10.5 12C10.7761 12 11 12.2239 11 12.5V14.5C11 14.7761 10.7761 15 10.5 15C10.2239 15 10 14.7761 10 14.5V12.5ZM10.5 10C9.11929 10 8 11.1193 8 12.5V14.5C8 15.8807 9.11929 17 10.5 17C11.8807 17 13 15.8807 13 14.5V12.5C13 11.1193 11.8807 10 10.5 10ZM14 10C13.4477 10 13 10.4477 13 11C13 11.5523 13.4477 12 14 12V16C14 16.5523 14.4477 17 15 17C15.5523 17 16 16.5523 16 16V11C16 10.4477 15.5523 10 15 10H14Z" fill="#000000"></path> </g></svg>
+                        <span>Players</span>
                     </a>
                 </li>
                 <li class="sidebar-list-item">
@@ -58,25 +54,8 @@
                 </li>
                 <li class="sidebar-list-item">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-inbox">
-                            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
-                            <path
-                                d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
-                        </svg>
-                        <span>Inbox</span>
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-bell">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
-                        </svg>
-                        <span>Notifications</span>
+                        <svg viewBox="0 0 24 24" version="1.1" class="feather feather-inbox" width="18" height="18" ><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ic_fluent_team_add_24_filled" fill="white" fill-rule="nonzero"> <path d="M17.5,12 C20.5375661,12 23,14.4624339 23,17.5 C23,20.5375661 20.5375661,23 17.5,23 C14.4624339,23 12,20.5375661 12,17.5 C12,14.4624339 14.4624339,12 17.5,12 Z M17.5,13.9992349 L17.4101244,14.0072906 C17.2060313,14.0443345 17.0450996,14.2052662 17.0080557,14.4093593 L17,14.4992349 L16.9996498,16.9992349 L14.4976498,17 L14.4077742,17.0080557 C14.2036811,17.0450996 14.0427494,17.2060313 14.0057055,17.4101244 L13.9976498,17.5 L14.0057055,17.5898756 C14.0427494,17.7939687 14.2036811,17.9549004 14.4077742,17.9919443 L14.4976498,18 L17.0006498,17.9992349 L17.0011076,20.5034847 L17.0091633,20.5933603 C17.0462073,20.7974534 17.207139,20.9583851 17.411232,20.995429 L17.5011076,21.0034847 L17.5909833,20.995429 C17.7950763,20.9583851 17.956008,20.7974534 17.993052,20.5933603 L18.0011076,20.5034847 L18.0006498,17.9992349 L20.5045655,18 L20.5944411,17.9919443 C20.7985342,17.9549004 20.9594659,17.7939687 20.9965098,17.5898756 L21.0045655,17.5 L20.9965098,17.4101244 C20.9594659,17.2060313 20.7985342,17.0450996 20.5944411,17.0080557 L20.5045655,17 L17.9996498,16.9992349 L18,14.4992349 L17.9919443,14.4093593 C17.9549004,14.2052662 17.7939687,14.0443345 17.5898756,14.0072906 L17.5,13.9992349 Z M14.2540247,10 C15.0885672,10 15.8169906,10.4543496 16.2054276,11.1291814 C13.23532,11.7296535 11,14.3537833 11,17.5 C11,18.7891565 11.3752958,19.9906579 12.0225923,21.0012092 L12.002976,21 C9.51711551,21 7.50192738,18.9848119 7.50192738,16.4989513 L7.50192738,12.25 C7.50192738,11.0073593 8.5092867,10 9.75192738,10 L14.2540247,10 Z M7.40645343,10.000271 C6.89290875,10.5355324 6.56080951,11.2462228 6.50902592,12.0334718 L6.50192738,12.25 L6.50192738,16.4989513 C6.50192738,17.3455959 6.69319107,18.1475684 7.03486751,18.8640179 C6.70577369,18.9530495 6.35898976,19 6.00123996,19 C3.79141615,19 2,17.2085839 2,14.99876 L2,12.25 C2,11.059136 2.92516159,10.0843551 4.09595119,10.0051908 L4.25,10 L7.40645343,10.000271 Z M19.75,10 C20.9926407,10 22,11.0073593 22,12.25 L22.0008195,12.8103588 C20.8328473,11.6891263 19.2469007,11 17.5,11 L17.2568191,11.0044649 L17.2568191,11.0044649 C17.1013063,10.6296432 16.8768677,10.2893694 16.5994986,10.000271 L19.75,10 Z M18.5,4 C19.8807119,4 21,5.11928813 21,6.5 C21,7.88071187 19.8807119,9 18.5,9 C17.1192881,9 16,7.88071187 16,6.5 C16,5.11928813 17.1192881,4 18.5,4 Z M12,3 C13.6568542,3 15,4.34314575 15,6 C15,7.65685425 13.6568542,9 12,9 C10.3431458,9 9,7.65685425 9,6 C9,4.34314575 10.3431458,3 12,3 Z M5.5,4 C6.88071187,4 8,5.11928813 8,6.5 C8,7.88071187 6.88071187,9 5.5,9 C4.11928813,9 3,7.88071187 3,6.5 C3,5.11928813 4.11928813,4 5.5,4 Z" > </path> </g> </g> </g></svg>
+                        <span>Teams</span>
                     </a>
                 </li>
             </ul>
@@ -181,19 +160,19 @@
                         </div>
 
                         <section class="section2">
-                            <form action="" id="formData">
+                            <form action="" id="formData" method="POST">
                                 <div class="textInputs">
                                     <div>
-                                        <label for="" class="laber">Name</label>
-                                        <input type="text" id="name" name="name">
+                                        <label for="name" class="laber">Name</label>
+                                        <input type="text" id="name" name="name" placeholder="Player name">
                                     </div>
                                     <div>
                                         <label for="">Nationality</label>
-                                        <input type="text" id="nationality" name="nationality">
+                                        <input type="text" id="nationality" name="nationality" placeholder="Nationality">
                                     </div>
                                     <div>
                                         <label for="">Club</label>
-                                        <input type="text" id="club" name="club">
+                                        <input type="text" id="club" name="club" placeholder="Name of club">
                                     </div>
                                     <div class="positionSelect">
                                         <label for="">Position</label>
@@ -211,90 +190,90 @@
                                     </div>
                                 </div>
                                 <div class="filesInput">
-                                    <div>
+                                    <div class="fileContainer">
                                         <label for="photo">Photo</label>
                                         <input type="file" id="photo" name="photo">
                                         <div class="photoOutput">
-                                            <img src="" alt="" id="photoOutput">
+                                            <img src="./images/default-pic.jpg" alt="" id="photoOutput">
                                         </div>
                                     </div>
-                                    <div>
-                                        <label for="">Flag</label>
+                                    <div class="fileContainer">
+                                        <label for="flag">Flag</label>
                                         <input type="file" id="flag" name="flag">
                                         <div class="flagOutput">
-                                            <img src="" alt="" id="flagOutput">
+                                            <img src="./images/default-pic.jpg" alt="" id="flagOutput">
                                         </div>
                                     </div>
-                                    <div>
-                                        <label for="">Logo Club</label>
+                                    <div class="fileContainer">
+                                        <label for="logo">Logo Club</label>
                                         <input type="file" id="logo" name="logo">
                                         <div class="LogoOutput">
-                                            <img src="" alt="" id="LogoOutput">
+                                            <img src="./images/default-pic.jpg" alt="" id="LogoOutput">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="numInputs" id="numInputs">
                                     <div class="div">
                                         <label for="">RAT</label>
-                                        <input class="num" type="number" name="rating" id="rating2">
+                                        <input class="num" type="number" name="rating" id="rating2" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">PAC</label>
-                                        <input class="num" type="number" name="pace">
+                                        <input class="num" type="number" name="pace" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">SHO</label>
-                                        <input class="num" type="number" name="shooting">
+                                        <input class="num" type="number" name="shooting" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">PAS</label>
-                                        <input class="num" type="number" name="passing">
+                                        <input class="num" type="number" name="passing" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">DRI</label>
-                                        <input class="num" type="number" name="dribbling">
+                                        <input class="num" type="number" name="dribbling" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">DEF</label>
-                                        <input class="num" type="number" name="defending">
+                                        <input class="num" type="number" name="defending" placeholder="10 -> 99">
                                     </div>
                                     <div class="div">
                                         <label for="">PHY</label>
-                                        <input class="num" type="number" name="physical">
+                                        <input class="num" type="number" name="physical" placeholder="10 -> 99">
                                     </div>
                                     <button type="submit" class="createBtn">Submit</button>
                                 </div>
-                                <!-- <div class="numInputs GKinputs" id="numInputsGK">
-                                    <div>
+                                <div class="numInputs GKinputs" id="numInputsGK" style="display: none;">
+                                    <div class="div">
                                         <label for="">RAT</label>
-                                        <input class="numPlayer" type="number" name="rating" id="rating1">
+                                        <input class="numPlayer" type="number" name="rating" id="rating1" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">DIV</label>
-                                        <input class="numPlayer" type="number" name="diving">
+                                        <input class="numPlayer" type="number" name="diving" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">HAN</label>
-                                        <input class="numPlayer" type="number" name="handling">
+                                        <input class="numPlayer" type="number" name="handling" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">KIC</label>
-                                        <input class="numPlayer" type="number" name="kicking">
+                                        <input class="numPlayer" type="number" name="kicking" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">REF</label>
-                                        <input class="numPlayer" type="number" name="reflexes">
+                                        <input class="numPlayer" type="number" name="reflexes" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">SPD</label>
-                                        <input class="numPlayer" type="number" name="speed">
+                                        <input class="numPlayer" type="number" name="speed" placeholder="10 -> 99">
                                     </div>
-                                    <div>
+                                    <div class="div">
                                         <label for="">POS</label>
-                                        <input class="numPlayer" type="number" name="positioning">
+                                        <input class="numPlayer" type="number" name="positioning" placeholder="10 -> 99">
                                     </div>
                                     <button type="submit" class="createBtn">Submit</button>
-                                </div> -->
+                                </div>
                             </form>
                         </section>
 

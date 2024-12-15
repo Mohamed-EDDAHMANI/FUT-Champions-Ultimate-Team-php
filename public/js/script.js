@@ -24,6 +24,7 @@ document.querySelector(".jsFilter").addEventListener("click", function () {
    modeSwitch.classList.toggle('active');
   });
 
+  const positionSelect = document.getElementById('positionSelect')
   positionSelect.addEventListener('change', () => {
     if (positionSelect.value === 'GK') {
         numInputsGK.style.display = 'flex'
