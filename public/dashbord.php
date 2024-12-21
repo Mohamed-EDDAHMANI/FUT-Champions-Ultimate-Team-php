@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +26,8 @@
                 </div>
             </div>
             <ul class="sidebar-list">
-                <li class="sidebar-list-item">
-                    <a href="#">
+                <li class="sidebar-list-item ">
+                    <a href="#" class="redirect" id="homeLink">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-home">
@@ -34,7 +38,7 @@
                     </a>
                 </li>
                 <li class="sidebar-list-item active">
-                    <a href="#">
+                    <a href="#" class="redirect" id="playersLink">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor"  
                             class="feather feather-shopping-bag" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path  d="M5 2C4.84476 2 4.69164 2.03615 4.55279 2.10557L1.10557 3.82918C0.428004 4.16796 0 4.86049 0 5.61803V9.38197C0 10.8687 1.56462 11.8357 2.89443 11.1708L4 10.618V19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V10.618L21.1056 11.1708C22.4354 11.8357 24 10.8687 24 9.38197V5.61803C24 4.86049 23.572 4.16796 22.8944 3.82918L19.4472 2.10557C19.3084 2.03615 19.1552 2 19 2H16C14.8954 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2H5ZM4 4.61803V8.38197L2 9.38197L2 5.61803L4 4.61803ZM8 4H6V9V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V9V4H16C16 6.20914 14.2091 8 12 8C9.79086 8 8 6.20914 8 4ZM22 5.61803L20 4.61803V8.38197L22 9.38197V5.61803ZM10 12.5C10 12.2239 10.2239 12 10.5 12C10.7761 12 11 12.2239 11 12.5V14.5C11 14.7761 10.7761 15 10.5 15C10.2239 15 10 14.7761 10 14.5V12.5ZM10.5 10C9.11929 10 8 11.1193 8 12.5V14.5C8 15.8807 9.11929 17 10.5 17C11.8807 17 13 15.8807 13 14.5V12.5C13 11.1193 11.8807 10 10.5 10ZM14 10C13.4477 10 13 10.4477 13 11C13 11.5523 13.4477 12 14 12V16C14 16.5523 14.4477 17 15 17C15.5523 17 16 16.5523 16 16V11C16 10.4477 15.5523 10 15 10H14Z" fill="#000000"></path> </g></svg>
@@ -42,7 +46,7 @@
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="#">
+                    <a href="#" class="redirect" id="statisticsLink">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-pie-chart">
@@ -53,7 +57,7 @@
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="#">
+                    <a href="#" class="redirect" id="teamsLink">
                         <svg viewBox="0 0 24 24" version="1.1" class="feather feather-inbox" width="18" height="18" ><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ic_fluent_team_add_24_filled" fill="white" fill-rule="nonzero"> <path d="M17.5,12 C20.5375661,12 23,14.4624339 23,17.5 C23,20.5375661 20.5375661,23 17.5,23 C14.4624339,23 12,20.5375661 12,17.5 C12,14.4624339 14.4624339,12 17.5,12 Z M17.5,13.9992349 L17.4101244,14.0072906 C17.2060313,14.0443345 17.0450996,14.2052662 17.0080557,14.4093593 L17,14.4992349 L16.9996498,16.9992349 L14.4976498,17 L14.4077742,17.0080557 C14.2036811,17.0450996 14.0427494,17.2060313 14.0057055,17.4101244 L13.9976498,17.5 L14.0057055,17.5898756 C14.0427494,17.7939687 14.2036811,17.9549004 14.4077742,17.9919443 L14.4976498,18 L17.0006498,17.9992349 L17.0011076,20.5034847 L17.0091633,20.5933603 C17.0462073,20.7974534 17.207139,20.9583851 17.411232,20.995429 L17.5011076,21.0034847 L17.5909833,20.995429 C17.7950763,20.9583851 17.956008,20.7974534 17.993052,20.5933603 L18.0011076,20.5034847 L18.0006498,17.9992349 L20.5045655,18 L20.5944411,17.9919443 C20.7985342,17.9549004 20.9594659,17.7939687 20.9965098,17.5898756 L21.0045655,17.5 L20.9965098,17.4101244 C20.9594659,17.2060313 20.7985342,17.0450996 20.5944411,17.0080557 L20.5045655,17 L17.9996498,16.9992349 L18,14.4992349 L17.9919443,14.4093593 C17.9549004,14.2052662 17.7939687,14.0443345 17.5898756,14.0072906 L17.5,13.9992349 Z M14.2540247,10 C15.0885672,10 15.8169906,10.4543496 16.2054276,11.1291814 C13.23532,11.7296535 11,14.3537833 11,17.5 C11,18.7891565 11.3752958,19.9906579 12.0225923,21.0012092 L12.002976,21 C9.51711551,21 7.50192738,18.9848119 7.50192738,16.4989513 L7.50192738,12.25 C7.50192738,11.0073593 8.5092867,10 9.75192738,10 L14.2540247,10 Z M7.40645343,10.000271 C6.89290875,10.5355324 6.56080951,11.2462228 6.50902592,12.0334718 L6.50192738,12.25 L6.50192738,16.4989513 C6.50192738,17.3455959 6.69319107,18.1475684 7.03486751,18.8640179 C6.70577369,18.9530495 6.35898976,19 6.00123996,19 C3.79141615,19 2,17.2085839 2,14.99876 L2,12.25 C2,11.059136 2.92516159,10.0843551 4.09595119,10.0051908 L4.25,10 L7.40645343,10.000271 Z M19.75,10 C20.9926407,10 22,11.0073593 22,12.25 L22.0008195,12.8103588 C20.8328473,11.6891263 19.2469007,11 17.5,11 L17.2568191,11.0044649 L17.2568191,11.0044649 C17.1013063,10.6296432 16.8768677,10.2893694 16.5994986,10.000271 L19.75,10 Z M18.5,4 C19.8807119,4 21,5.11928813 21,6.5 C21,7.88071187 19.8807119,9 18.5,9 C17.1192881,9 16,7.88071187 16,6.5 C16,5.11928813 17.1192881,4 18.5,4 Z M12,3 C13.6568542,3 15,4.34314575 15,6 C15,7.65685425 13.6568542,9 12,9 C10.3431458,9 9,7.65685425 9,6 C9,4.34314575 10.3431458,3 12,3 Z M5.5,4 C6.88071187,4 8,5.11928813 8,6.5 C8,7.88071187 6.88071187,9 5.5,9 C4.11928813,9 3,7.88071187 3,6.5 C3,5.11928813 4.11928813,4 5.5,4 Z" > </path> </g> </g> </g></svg>
                         <span>Teams</span>
                     </a>
@@ -86,7 +90,7 @@
                         <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
                     </svg>
                 </button>
-                <button class="app-content-headerButton">Add Product</button>
+                <button class="redirect app-content-headerButton " id="formLink">Add Product</button>
             </div>
             <div class="app-content-actions">
                 <input class="search-bar" placeholder="Search..." type="text">
@@ -148,209 +152,31 @@
                 </div>
             </div>
             <div class="products-area-wrapper tableView">
-                <div class='addPlayerContainer '>
-                    <div class="formContainer">
-                        <div>
-                            <h3 style="color: white; font-family: Arial, Helvetica, sans-serif; padding: 3px ;">Add
-                                player
-                            </h3>
-                        </div>
-                        <div class="error" style="display: none; justify-content: center; align-items: center; ">
-                            <span class="errorSpan" style="color: white;"></span>
-                        </div>
-
-                        <section class="section2">
-                            <form action="" id="formData" method="POST">
-                                <div class="textInputs">
-                                    <div>
-                                        <label for="name" class="laber">Name</label>
-                                        <input type="text" id="name" name="name" placeholder="Player name">
-                                    </div>
-                                    <div>
-                                        <label for="">Nationality</label>
-                                        <input type="text" id="nationality" name="nationality" placeholder="Nationality">
-                                    </div>
-                                    <div>
-                                        <label for="">Club</label>
-                                        <input type="text" id="club" name="club" placeholder="Name of club">
-                                    </div>
-                                    <div class="positionSelect">
-                                        <label for="">Position</label>
-                                        <select name="" id="positionSelect">
-                                            <option value="" selected></option>
-                                            <option value="ST">ST</option>
-                                            <option value="LM">LW</option>
-                                            <option value="RW">RW</option>
-                                            <option value="CM">CM</option>
-                                            <option value="LB">LB</option>
-                                            <option value="CB">CB</option>
-                                            <option value="RB">RB</option>
-                                            <option value="GK">GK</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="filesInput">
-                                    <div class="fileContainer">
-                                        <label for="photo">Photo</label>
-                                        <input type="file" id="photo" name="photo">
-                                        <div class="photoOutput">
-                                            <img src="./images/default-pic.jpg" alt="" id="photoOutput">
-                                        </div>
-                                    </div>
-                                    <div class="fileContainer">
-                                        <label for="flag">Flag</label>
-                                        <input type="file" id="flag" name="flag">
-                                        <div class="flagOutput">
-                                            <img src="./images/default-pic.jpg" alt="" id="flagOutput">
-                                        </div>
-                                    </div>
-                                    <div class="fileContainer">
-                                        <label for="logo">Logo Club</label>
-                                        <input type="file" id="logo" name="logo">
-                                        <div class="LogoOutput">
-                                            <img src="./images/default-pic.jpg" alt="" id="LogoOutput">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="numInputs" id="numInputs">
-                                    <div class="div">
-                                        <label for="">RAT</label>
-                                        <input class="num" type="number" name="rating" id="rating2" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">PAC</label>
-                                        <input class="num" type="number" name="pace" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">SHO</label>
-                                        <input class="num" type="number" name="shooting" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">PAS</label>
-                                        <input class="num" type="number" name="passing" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">DRI</label>
-                                        <input class="num" type="number" name="dribbling" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">DEF</label>
-                                        <input class="num" type="number" name="defending" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">PHY</label>
-                                        <input class="num" type="number" name="physical" placeholder="10 -> 99">
-                                    </div>
-                                    <button type="submit" class="createBtn">Submit</button>
-                                </div>
-                                <div class="numInputs GKinputs" id="numInputsGK" style="display: none;">
-                                    <div class="div">
-                                        <label for="">RAT</label>
-                                        <input class="numPlayer" type="number" name="rating" id="rating1" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">DIV</label>
-                                        <input class="numPlayer" type="number" name="diving" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">HAN</label>
-                                        <input class="numPlayer" type="number" name="handling" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">KIC</label>
-                                        <input class="numPlayer" type="number" name="kicking" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">REF</label>
-                                        <input class="numPlayer" type="number" name="reflexes" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">SPD</label>
-                                        <input class="numPlayer" type="number" name="speed" placeholder="10 -> 99">
-                                    </div>
-                                    <div class="div">
-                                        <label for="">POS</label>
-                                        <input class="numPlayer" type="number" name="positioning" placeholder="10 -> 99">
-                                    </div>
-                                    <button type="submit" class="createBtn">Submit</button>
-                                </div>
-                            </form>
-                        </section>
-
-                    </div>
+                <div class="homeLink" style="display: none ;">
+                    <?php include './components/home.php'; ?>
                 </div>
-                <div class="playersListContainer ">
-                    <div class="products-header">
-                        <div class="product-cell image">
-                            Items
-                            <button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-cell category">Category<button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button></div>
-                        <div class="product-cell status-cell">Status<button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button></div>
-                        <div class="product-cell sales">Sales<button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button></div>
-                        <div class="product-cell stock">Stock<button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button></div>
-                        <div class="product-cell price">Price<button class="sort-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
-                                </svg>
-                            </button></div>
-                    </div>
-                    <div class="products-row">
-                        <button class="cell-more-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-more-vertical">
-                                <circle cx="12" cy="12" r="1" />
-                                <circle cx="12" cy="5" r="1" />
-                                <circle cx="12" cy="19" r="1" />
-                            </svg>
-                        </button>
-                        <div class="product-cell image">
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                                alt="product">
-                            <span>Ocean</span>
-                        </div>
-                        <div class="product-cell category"><span class="cell-label">Category:</span>Furniture</div>
-                        <div class="product-cell status-cell">
-                            <span class="cell-label">Status:</span>
-                            <span class="status active">Active</span>
-                        </div>
-                        <div class="product-cell sales"><span class="cell-label">Sales:</span>11</div>
-                        <div class="product-cell stock"><span class="cell-label">Stock:</span>36</div>
-                        <div class="product-cell price"><span class="cell-label">Price:</span>$560</div>
-                    </div>
+                <div class="playersListContainer playersLink" style="display: none ;">
+                    <?php include './components/playerDash.php'; ?>
+                </div>
+                <div class="statisticsLink" style="display: block ;">
+                    <?php include './components/statistices.php'; ?>
+                </div>
+                <div class="teamsLink" style="display: none ;">teamsLink</div>
+                <div class='addPlayerContainer formLink' style="display: none ;">
+                    <?php include './components/form.php'; ?>
                 </div>
             </div>
         </div>
     </div>
     <!-- partial -->
     <script src="./js/script.js"></script>
+    <?php 
+    if(isset($_SESSION["script"])){
+        echo $_SESSION["script"];
+        unset($_SESSION["script"]);
+    }
+     ?>
+
 
 </body>
 
@@ -363,180 +189,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <?php
-// Include database connection file
-include('../src/config/database.php');
-
-// Fetch data from the database for players, clubs, and statistics
-$players = mysqli_query($conn, "SELECT * FROM players");
-$clubs = mysqli_query($conn, "SELECT * FROM clubs");
-$playerStats = mysqli_query($conn, "SELECT id_club, COUNT(*) AS total_players FROM players GROUP BY id_club");
-
-$statsData = [];
-while ($row = mysqli_fetch_assoc($playerStats)) {
-    $clubName = mysqli_fetch_assoc(mysqli_query($conn, "SELECT name FROM clubs WHERE id = " . $row['club_id']))['name'];
-    $statsData[] = [
-        'club' => $clubName,
-        'total' => $row['total_players']
-    ];
-}
-?> -->
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-</head>
-<body>
-<div class="container mt-5">
-    <h1>Admin Dashboard</h1>
-
-    <h2>Players</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Club</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php while ($player = mysqli_fetch_assoc($players)): ?>
-                <tr>
-                    <td><?= $player['id'] ?></td>
-                    <td><?= $player['name'] ?></td>
-                    <td><?= $player['age'] ?></td>
-                    <td><?= $player['id_club'] ?></td>
-                    <td>
-                        <a href="edit_player.php?id=<?= $player['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="delete_player.php?id=<?= $player['id'] ?>" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                </tr>
-            <?php endwhile; ?>
-        </tbody>
-    </table>
-    <a href="add_player.php" class="btn btn-primary">Add Player</a>
-
-    <h2>Clubs</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>City</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php while ($club = mysqli_fetch_assoc($clubs)): ?>
-                <tr>
-                    <td><?= $club['id'] ?></td>
-                    <td><?= $club['name'] ?></td>
-                    <td><?= $club['city'] ?></td>
-                    <td>
-                        <a href="edit_club.php?id=<?= $club['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="delete_club.php?id=<?= $club['id'] ?>" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                </tr>
-            <?php endwhile; ?>
-        </tbody>
-    </table>
-    <a href="add_club.php" class="btn btn-primary">Add Club</a>
-
-    <h2>Statistics</h2>
-    <canvas id="statsChart" width="400" height="200"></canvas>
-</div>
-
-<script>
-    const statsData = <?= json_encode($statsData) ?>;
-    const ctx = document.getElementById('statsChart').getContext('2d');
-    const chart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: statsData.map(stat => stat.club),
-            datasets: [{
-                label: 'Total Players',
-                data: statsData.map(stat => stat.total),
-                backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
-</body>
-</html> -->

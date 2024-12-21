@@ -228,6 +228,8 @@
     $query = "SELECT * FROM players;";
     $data = mysqli_query($conn, $query);
     $result = mysqli_num_rows($data);
+    mysqli_fetch_assoc($data);
+    // echo var_dump($result );
     while ($row = mysqli_fetch_assoc($data)) {
         echo '<h1>' . $row['name_player'] . '<h1/>';
     }
